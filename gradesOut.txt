@@ -1,0 +1,5 @@
+The array in ascending order is:
+2 3 3 5 5 5 6 8 8 8 8 9 10 10 11 12 15 17 18 18 20 20 21 24 25 28 31 32 35 35 37 37 37 40 40 41 41 41 42 43 44 46 47 48 49 49 49 49 50 50 
+
+The Average of the Grades is 26.640
+The Standard Deviation of the Grades is 16.374
