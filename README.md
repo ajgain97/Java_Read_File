@@ -1,18 +1,33 @@
-## Getting Started
+## Integrity Policy and Program Information
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Integrity Policy Statement  
+My words and actions will reflect Academic Integrity. 
+I will not cheat or lie or steal in academic matters.
+I will promote integrity in the UNCG community.
+Austin Gain 03/22/2022
+
+GainAHW4
+Austin Gain
+CSC 230, Sec 3
+
+This program loads to an array a list of 50 grades read from a file.
+Once the scores have been loaded to the array, provide the user with a menu of options:
+
+A. Print the grades to the screen sorted in ascending order
+B. Calculate and print to the screen the average value of the scores
+C. Calculate and print to the screen the standard deviation of the scores
+D. Print the grades to a file sorted in ascending order, along with the average value and standard deviation of the scores
+E. Quit
 
 ## Folder Structure
 
-The workspace contains two folders by default, where:
+# src contains:
+GainAHW4.java           main program
+gradesIn.txt            text file to be read by the program
+gradesOut.txt           text file where data will be written
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+# bin contains:
+GainAHW4.class          compiled version of .java file
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+# vscode contains:
+settings.json           which manages Java libraries and dependencies

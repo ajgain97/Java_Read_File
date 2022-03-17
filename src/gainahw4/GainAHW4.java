@@ -145,6 +145,7 @@ public class GainAHW4 {
             switch (choice) {
                 case 'A', 'a':
                     gradeArray = sortArraysMethod(gradeArray);
+                    System.out.println("The array in ascending order is:");
                     printValuesMethod(gradeArray);
                     System.out.println("\n");
                     printMenu();
