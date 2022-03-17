@@ -13,6 +13,7 @@ CSC 230, Sec 3
 */
 
 // extra methods created to organize code
+// txt files are in the same folder as this java file
 
 package gainahw4;
 
@@ -53,7 +54,7 @@ public class GainAHW4 {
                             "****************************************************************\n");
     }
 
-    // reads the input file to the array, then returns the array
+    // reads the input file to the array
     public static int[] readFileToArray() throws IOException, FileNotFoundException {
         File file = new File("gradesIn.txt");
         if (!file.exists()) {
@@ -123,7 +124,7 @@ public class GainAHW4 {
         return Math.sqrt(standDev / gradeArray.length);
     }
 
-    // outputs the data to a txt file
+    // outputs the data to a text file
     public static void printToFileArray(int[] gradeArray, double average, double standDev) throws IOException {
         PrintWriter writer = new PrintWriter("gradesOut.txt");
         gradeArray = sortArraysMethod(gradeArray);
@@ -137,6 +138,8 @@ public class GainAHW4 {
         writer.close();
     }
 
+    // performs the tasks based off the choice made by the user
+    // contained in a while loop to have the user return to the menu
     public static void performMethods(int[] gradeArray, double average, double standDev, char choice, boolean contains) throws IOException, InputMismatchException {
         while (contains) {
             switch (choice) {
@@ -173,18 +176,23 @@ public class GainAHW4 {
         }
     }
 
+    // main method
     public static void main(String[] args) throws IOException, FileNotFoundException, InputMismatchException {
+        // prints program information and menu
         printInfo();
         printMenu();
 
+        // initializes data from methods
         int[] gradeArray = readFileToArray();
         double average = averageArrayMethod(gradeArray);
         double standDev = StandDev(gradeArray, average);
         char choice = getChoice();
         boolean contains = checkInArray(choice);
 
+        // perform tasks based off menu choice
         performMethods(gradeArray, average, standDev, choice, contains);
 
+        // end of program
         System.out.println("Thanks for using my program!");
     }
 }
